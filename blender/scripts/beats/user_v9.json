@@ -1,0 +1,28 @@
+{
+ "_doc": "Beat sheet for the real-use screen recording (tools/rec_user.sh v9): app seconds of the scripted user (EXPO_PUBLIC_USERSIM=1), measured on a dev run 05/11; the music (mix_calm.py) is laid under the app from app t = 0; the end chord at app_end, while the next sheet slides in.",
+ "app_end": 60.0,
+ "card": 3.0,
+ "audio": "render/audio/mix_user_v9.wav",
+ "events": {
+  "folds": [
+   6.334,
+   9.149,
+   11.555,
+   15.927,
+   18.349,
+   20.915,
+   23.776,
+   26.588,
+   29.167,
+   33.631,
+   35.981,
+   38.699,
+   41.026,
+   43.73
+  ],
+  "awaken": 43.73,
+  "takeoff": 46.137,
+  "climb": 50.943,
+  "vanish": 55.815
+ }
+}
