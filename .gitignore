@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# app build output and dependencies
+app/node_modules/
+app/ios/
+app/android/
+app/.expo/
+app/dist/
+
+# recordings, renders, intermediate frames and the showcase pack (tens of GB)
+render/
+
+# Blender autosave backups, Python caches, editor leftovers
+*.blend1
+__pycache__/
+*.orig
+
+# build / Metro logs (local paths) and simulator ids
+*.log
+notes/metro.log.mark
+notes/udid*.txt
