@@ -1,0 +1,131 @@
+{
+ "_doc": "Beat sheet v5 (05/11): v4 storyboard with the flight sweeping across the view; calm piano score (mix_calm.py).: new storyboard, no rewind. App t = 0 = wide shot of the room with the flat sheet, slow zoom-in 0.6 -> 3.4 s, 14 folds ~1.53 s apart (fold14 = awaken), takeoff, climb (out through the open panel), through (passes the panel), vanish, 3 s end card at app_end. Event times measured on a dev build (coordinator, 04/11).",
+ "app_start": 0.0,
+ "app_end": 39.6,
+ "card": 3.0,
+ "sync_offset": 0.0,
+ "audio": "render/audio/mix_v6.wav",
+ "sheet": [
+  1.0,
+  4.0,
+  14.0,
+  25.5,
+  33.0,
+  41.4
+ ],
+ "screen_gain": 1.0,
+ "card_screen": null,
+ "plate_mix": 0.32,
+ "bg": [
+  [
+   "start",
+   "#a7b2d4",
+   "#f1c4b8",
+   "#f6c7a2",
+   "#ffd6ae",
+   0.38,
+   0
+  ],
+  [
+   3.4,
+   "#b0acd0",
+   "#f0bec2",
+   "#f4c2a6",
+   "#ffd0b0",
+   0.34,
+   120
+  ],
+  [
+   "awaken",
+   "#a3b0da",
+   "#f3c9b8",
+   "#f9cfa0",
+   "#ffe0b0",
+   0.5,
+   60
+  ],
+  [
+   "climb",
+   "#6f9be0",
+   "#a9c6ee",
+   "#ead4cc",
+   "#ffe6c8",
+   0.28,
+   150,
+   0.5,
+   1.02
+  ],
+  [
+   "vanish",
+   "#7f9ddc",
+   "#efbfc8",
+   "#f8c99c",
+   "#ffdcb0",
+   0.55,
+   90,
+   0.42,
+   1.04
+  ],
+  [
+   "card",
+   "#b6bfe0",
+   "#f5d2c8",
+   "#f8d3b2",
+   "#ffe3c4",
+   0.35,
+   0,
+   0.55,
+   1.0
+  ]
+ ],
+ "bokeh_n": 14,
+ "bokeh_alpha": 0.55,
+ "petals_n": 30,
+ "camera_d": 5.0,
+ "card_d": 7.4,
+ "card_phone": {
+  "loc": [
+   0.98,
+   -1.0,
+   0.0
+  ],
+  "rot": [
+   0,
+   0,
+   -6
+  ]
+ },
+ "card_x": -0.85,
+ "title": "Origami Crane",
+ "title_in": 0.1,
+ "title_step": 0.045,
+ "body_in": 0.45,
+ "events": {
+  "folds": [
+   4.867,
+   6.4,
+   7.95,
+   9.483,
+   11.033,
+   12.6,
+   14.133,
+   15.7,
+   17.233,
+   18.767,
+   20.3,
+   21.867,
+   23.4,
+   24.967
+  ],
+  "awaken": 24.967,
+  "takeoff": 27.367,
+  "climb": 32.167,
+  "through": 33.6,
+  "vanish": 37.05
+ },
+ "petal_size": 2.0,
+ "bg_mid_amt": 0.55,
+ "title_maxw": 2.2,
+ "title_z": 0.5,
+ "mixer": "mix_calm.py"
+}

@@ -1,0 +1,159 @@
+{
+  "camera": {
+    "pos": [
+      0.0,
+      -6.0,
+      2.9
+    ],
+    "target": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "fovY": 42.0,
+    "up": [
+      0,
+      0,
+      1
+    ]
+  },
+  "sunDir": [
+    -0.0925,
+    0.9245,
+    0.3698
+  ],
+  "sunColor": [
+    1.0,
+    0.8,
+    0.53
+  ],
+  "ambient": [
+    0.084,
+    0.098,
+    0.209
+  ],
+  "table": {
+    "x": [
+      -5.0,
+      5.0
+    ],
+    "y": [
+      -6.0,
+      7.0
+    ]
+  },
+  "backdrop": {
+    "y": 7.0,
+    "x": [
+      -9.0,
+      9.0
+    ],
+    "z": [
+      -0.5,
+      13.0
+    ]
+  },
+  "image": {
+    "bg": [
+      1320,
+      2868
+    ],
+    "table": [
+      1600,
+      2080
+    ],
+    "sunmask": [
+      1600,
+      2080
+    ],
+    "backdrop": [
+      2048,
+      1536
+    ],
+    "tableOrientation": "top = +y (wall side), left = -x",
+    "backdropOrientation": "top = +z, left = -x"
+  },
+  "color": "sRGB; table_base/table_sun/table are sRGB-encoded linear light (decode, add, re-encode); masks are linear 0..1; lighting model lit = albedo * (ambient + sunColor * max(n.L, 0)) * sunScale",
+  "sunScale": 2.25,
+  "passes": {
+    "tableBase": "table_base.jpg",
+    "tableSun": "table_sun.jpg",
+    "maskLattice": "mask_lattice.jpg",
+    "maskLeaves": "mask_leaves.jpg",
+    "combine": "table = srgb(lin(table_base) + lin(table_sun) * mask_lattice * mask_leaves); masks are linear 0..1, sunmask.jpg = mask_lattice * mask_leaves"
+  },
+  "layers": [
+    {
+      "name": "sky",
+      "file": "anime/sky.jpg",
+      "y": 60.0,
+      "x": [
+        -30.0,
+        30.0
+      ],
+      "z": [
+        -4.718,
+        43.27
+      ],
+      "drift": 3.0
+    },
+    {
+      "name": "hills",
+      "file": "anime/hills.png",
+      "y": 35.0,
+      "x": [
+        -12.0,
+        12.0
+      ],
+      "z": [
+        -3.9,
+        12.1
+      ],
+      "drift": 0.0
+    },
+    {
+      "name": "garden",
+      "file": "anime/garden.png",
+      "y": 14.0,
+      "x": [
+        -9.0,
+        9.0
+      ],
+      "z": [
+        -5.0,
+        7.0
+      ],
+      "drift": 0.0
+    },
+    {
+      "name": "house",
+      "file": "anime/house.png",
+      "y": 7.0,
+      "x": [
+        -10.089,
+        9.868
+      ],
+      "z": [
+        -0.895,
+        12.41
+      ],
+      "drift": 0.0
+    }
+  ],
+  "layersNote": "vertical planes facing -y, back to front; image top = +z, left = -x; png = straight alpha; drift in image px per second (sky tiles horizontally)",
+  "houseOpening": {
+    "x": [
+      -2.8,
+      2.8
+    ],
+    "z": [
+      0.3,
+      3.639
+    ],
+    "y": 7.0
+  },
+  "tableStats": {
+    "sunMean": 0.546,
+    "shadeMean": 0.098
+  }
+}
